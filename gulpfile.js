@@ -35,7 +35,7 @@ function pugFunc() {
     .pipe(pug({
         pretty:true
     }))
-    .piipe(plumber.stop())
+    .pipe(plumber.stop())
     .pipe(gulp.dest('build'))
     .on('end', browserSync.reload)
 }
